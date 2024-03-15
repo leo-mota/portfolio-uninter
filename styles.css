@@ -1,0 +1,127 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Define a altura da linha para melhor legibilidade */
+    background-color: #62afa5;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #166366;
+    color: #ffffff;
+    position: fixed; /* Fixa a barra de navegação na parte superior da janela */
+    top: 0; /* Define a posição superior da barra de navegação */
+    left: 50%; /* Define a posição horizontal central da barra de navegação */
+    transform: translateX(-50%); /* Centraliza horizontalmente a barra de navegação */
+    z-index: 999; /* Define a ordem de empilhamento da barra de navegação */
+    width: 100%; /* Define a largura da barra de navegação como 100% da largura da janela */
+    padding: 10px; /* Adiciona preenchimento interno à barra de navegação */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    text-align: center; /* Centraliza o texto dentro da barra de navegação */
+}
+
+nav ul li {
+    display: inline; /* Faz com que os itens da lista de navegação apareçam em linha */
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px; /* Adiciona cantos arredondados aos links da barra de navegação */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre os links */
+}
+
+nav ul li a:hover { 
+    background-color: rgba(255, 255, 255, 0.2); /* Define a cor de fundo ao passar o mouse sobre os links da barra de navegação */
+}
+
+.content {
+    margin-top: 90px; /* Adiciona uma margem superior ao conteúdo para compensar a barra de navegação fixa */
+}
+
+.page {
+    max-width: 800px; /* Define a largura máxima para a página */
+    margin: 20px auto;
+    padding: 30px;
+    border: 10px solid #ffffff; /* Adiciona uma borda sólida à página */
+    border-radius: 10px;
+    background-color: #166366;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à página */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+form {
+    background-color: #62afa5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block; /* Faz com que as etiquetas dos formulários sejam exibidas em blocos */
+    margin-bottom: 10px;
+    font-weight: bold; /* Define a fonte em negrito para as etiquetas dos formulários */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Define a largura dos campos de texto dos formulários como 100% */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Adiciona uma borda aos campos de texto dos formulários */
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #166366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none; /* Remove a borda dos botões de envio dos formulários */
+    border-radius: 5px;
+    cursor: pointer; /* Define o cursor como um ponteiro ao passar o mouse sobre os botões de envio dos formulários */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse sobre os botões de envio dos formulários */
+}
+
+form input[type="submit"]:hover {
+    background-color: #144f50;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #166366;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
